@@ -10,8 +10,8 @@ Start it up:
 
 ```ZSH
 npm i
-npm run build-dev
-npm run build-prod
+npm run build-parcel-prod
+npm run build-parcel
 ```
 
 After you've compiled the React app the first time, you can skip building and load the static app directly via:
@@ -20,7 +20,7 @@ After you've compiled the React app the first time, you can skip building and lo
 npm run live
 ```
 
-> You will need to comment out the correct line (**44**) in [index.html](public/index.html)
+> You will need to comment out the correct line (**44**) in [index.html](public/index.html#L44)
 
 > By default, the http server will serve from http://localhost:8181
 

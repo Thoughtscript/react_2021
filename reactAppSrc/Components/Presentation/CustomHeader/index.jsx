@@ -12,6 +12,6 @@ import './CustomHeader.css'
 
 export default () =>
     <header>
-        <h2>React 2020</h2>
+        <h2>React 2021</h2>
         <Menu/>
     </header>

@@ -1059,29 +1059,29 @@ var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  var _react = _interopRequireDefault(require("react"));
-  var _reactDom = _interopRequireDefault(require("react-dom"));
-  var _App = _interopRequireDefault(require("./Components/App"));
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  /**
-  *  Entry.
-  *
-  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-  */
-  /** Core React*/
-  /** Custom*/
-  _reactDom["default"].render(/*#__PURE__*/_react["default"].createElement(_App["default"], null), document.getElementById('react_app_root'));
+  var _react = require('react');
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactDom = require('react-dom');
+  var _reactDomDefault = _parcelHelpers.interopDefault(_reactDom);
+  var _ComponentsApp = require('./Components/App');
+  var _ComponentsAppDefault = _parcelHelpers.interopDefault(_ComponentsApp);
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/entry.jsx";
+  _reactDomDefault.default.render(/*#__PURE__*/_reactDefault.default.createElement(_ComponentsAppDefault.default, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 17
+    }
+  }), document.getElementById('react_app_root'));
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-dom":"2sg1U","./Components/App":"1bFMR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3b2NM":[function(require,module,exports) {
+},{"react":"3b2NM","react-dom":"2sg1U","./Components/App":"1bFMR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"3b2NM":[function(require,module,exports) {
 "use strict";
 if ("development" === 'production') {
   module.exports = require('./cjs/react.production.min.js');
@@ -26470,90 +26470,124 @@ var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  Object.defineProperty(exports, "__esModule", {
-    value: true
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _NavigationRouter = require('./Navigation/Router');
+  var _NavigationRouterDefault = _parcelHelpers.interopDefault(_NavigationRouter);
+  require('./Application.css');
+  require('./Mobile.css');
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/Components/App.jsx";
+  exports.default = () => /*#__PURE__*/_reactDefault.default.createElement(_NavigationRouterDefault.default, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 22
+    }
   });
-  exports["default"] = void 0;
-  var _react = _interopRequireDefault(require("react"));
-  var _Router = _interopRequireDefault(require("./Navigation/Router"));
-  require("./Application.css");
-  require("./Mobile.css");
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  /**
-  *  App container.
-  *
-  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-  */
-  var _default = function _default() {
-    return (
-      /*#__PURE__*/_react["default"].createElement(_Router["default"], null)
-    );
-  };
-  exports["default"] = _default;
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","./Navigation/Router":"4AxUo","./Application.css":"2gCGu","./Mobile.css":"CH9tE","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4AxUo":[function(require,module,exports) {
+},{"react":"3b2NM","./Navigation/Router":"4AxUo","./Application.css":"2gCGu","./Mobile.css":"CH9tE","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"4AxUo":[function(require,module,exports) {
 "use strict";
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-  var _react = _interopRequireDefault(require("react"));
-  var _reactRouterDom = require("react-router-dom");
-  var _CustomHeader = _interopRequireDefault(require("../../Presentation/CustomHeader"));
-  require("./Router.css");
-  var _Constants = require("../../../Constants");
-  var _LandingPage = _interopRequireDefault(require("../../Presentation/LandingPage"));
-  var _PageNotFoundPage = _interopRequireDefault(require("../../Presentation/PageNotFoundPage"));
-  var _CustomFooter = _interopRequireDefault(require("../../Presentation/CustomFooter"));
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  /**
-  *  Router.
-  *
-  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-  */
-  var _default = function _default() {
-    return (
-      /*#__PURE__*/_react["default"].createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react["default"].createElement("div", {
-        className: "innerRouterWrapper"
-      }, /*#__PURE__*/_react["default"].createElement(_CustomHeader["default"], null), /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Route, {
-        exact: true,
-        path: _Constants.BASE_PATH,
-        component: _LandingPage["default"]
-      }), /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Route, {
-        exact: true,
-        path: _Constants.HOME_PATH,
-        component: _LandingPage["default"]
-      }), /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Route, {
-        component: _PageNotFoundPage["default"]
-      })), /*#__PURE__*/_react["default"].createElement(_CustomFooter["default"], null)))
-    );
-  };
-  exports["default"] = _default;
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactRouterDom = require('react-router-dom');
+  var _PresentationCustomHeader = require('../../Presentation/CustomHeader');
+  var _PresentationCustomHeaderDefault = _parcelHelpers.interopDefault(_PresentationCustomHeader);
+  require('./Router.css');
+  var _Constants = require('../../../Constants');
+  var _PresentationLandingPage = require('../../Presentation/LandingPage');
+  var _PresentationLandingPageDefault = _parcelHelpers.interopDefault(_PresentationLandingPage);
+  var _PresentationPageNotFoundPage = require('../../Presentation/PageNotFoundPage');
+  var _PresentationPageNotFoundPageDefault = _parcelHelpers.interopDefault(_PresentationPageNotFoundPage);
+  var _PresentationCustomFooter = require("../../Presentation/CustomFooter");
+  var _PresentationCustomFooterDefault = _parcelHelpers.interopDefault(_PresentationCustomFooter);
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/Components/Navigation/Router/index.jsx";
+  exports.default = () => /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+    className: "innerRouterWrapper",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement(_PresentationCustomHeaderDefault.default, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Switch, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: _Constants.BASE_PATH,
+    component: _PresentationLandingPageDefault.default,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: _Constants.HOME_PATH,
+    component: _PresentationLandingPageDefault.default,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+    component: _PresentationPageNotFoundPageDefault.default,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 17
+    }
+  })), /*#__PURE__*/_reactDefault.default.createElement(_PresentationCustomFooterDefault.default, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 13
+    }
+  })));
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","../../Presentation/CustomHeader":"1XRSj","./Router.css":"2PuEa","../../../Constants":"7tDIe","../../Presentation/LandingPage":"7vo7S","../../Presentation/PageNotFoundPage":"44mAy","../../Presentation/CustomFooter":"7i3QH","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","../../Presentation/CustomHeader":"1XRSj","./Router.css":"2PuEa","../../../Constants":"7tDIe","../../Presentation/LandingPage":"7vo7S","../../Presentation/PageNotFoundPage":"44mAy","../../Presentation/CustomFooter":"7i3QH","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 if ("development" === "production") {
   module.exports = require("./cjs/react-router-dom.min.js");
@@ -27839,7 +27873,7 @@ exports.useParams = useParams;
 exports.useRouteMatch = useRouteMatch;
 exports.withRouter = withRouter;
 
-},{"react":"3b2NM","prop-types":"4dfy5","history":"RV0qD","tiny-warning":"3B527","mini-create-react-context":"g8cqP","tiny-invariant":"4v3Kg","path-to-regexp":"5CMSM","react-is":"5l5zB","hoist-non-react-statics":"3nUHV"}],"4dfy5":[function(require,module,exports) {
+},{"react":"3b2NM","prop-types":"4dfy5","history":"RV0qD","tiny-warning":"3B527","mini-create-react-context":"g8cqP","tiny-invariant":"4v3Kg","path-to-regexp":"5CMSM","react-is":"68QIU","hoist-non-react-statics":"3nUHV"}],"4dfy5":[function(require,module,exports) {
 /**
 * Copyright (c) 2013-present, Facebook, Inc.
 *
@@ -27858,7 +27892,7 @@ if ("development" !== 'production') {
   module.exports = require('./factoryWithThrowingShims')();
 }
 
-},{"react-is":"3AQNa","./factoryWithTypeCheckers":"1PVBO"}],"3AQNa":[function(require,module,exports) {
+},{"react-is":"68QIU","./factoryWithTypeCheckers":"1PVBO"}],"68QIU":[function(require,module,exports) {
 "use strict";
 if ("development" === 'production') {
   module.exports = require('./cjs/react-is.production.min.js');
@@ -27866,7 +27900,7 @@ if ("development" === 'production') {
   module.exports = require('./cjs/react-is.development.js');
 }
 
-},{"./cjs/react-is.development.js":"1pM5H"}],"1pM5H":[function(require,module,exports) {
+},{"./cjs/react-is.development.js":"2onCQ"}],"2onCQ":[function(require,module,exports) {
 /** @license React v16.13.1
 * react-is.development.js
 *
@@ -28552,7 +28586,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
   return ReactPropTypes;
 };
 
-},{"react-is":"3AQNa","object-assign":"3eM6x","./lib/ReactPropTypesSecret":"3OVnw","./checkPropTypes":"R8SC7"}],"3OVnw":[function(require,module,exports) {
+},{"react-is":"68QIU","object-assign":"3eM6x","./lib/ReactPropTypesSecret":"3OVnw","./checkPropTypes":"R8SC7"}],"3OVnw":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -30379,184 +30413,10 @@ function pathToRegexp (path, keys, options) {
   return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
 }
 
-},{"isarray":"5JxtJ"}],"5JxtJ":[function(require,module,exports) {
+},{"isarray":"4oDl7"}],"4oDl7":[function(require,module,exports) {
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
-
-},{}],"5l5zB":[function(require,module,exports) {
-"use strict";
-if ("development" === 'production') {
-  module.exports = require('./cjs/react-is.production.min.js');
-} else {
-  module.exports = require('./cjs/react-is.development.js');
-}
-
-},{"./cjs/react-is.development.js":"6RWiH"}],"6RWiH":[function(require,module,exports) {
-/** @license React v16.13.1
-* react-is.development.js
-*
-* Copyright (c) Facebook, Inc. and its affiliates.
-*
-* This source code is licensed under the MIT license found in the
-* LICENSE file in the root directory of this source tree.
-*/
-"use strict";
-if ("development" !== "production") {
-  (function () {
-    "use strict";
-    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-    // nor polyfill, then a plain number is used for performance.
-    var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
-    // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-    // (unstable) APIs that have been removed. Can we remove the symbols?
-    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
-    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
-    function isValidElementType(type) {
-      return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-      type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
-    }
-    function typeOf(object) {
-      if (typeof object === 'object' && object !== null) {
-        var $$typeof = object.$$typeof;
-        switch ($$typeof) {
-          case REACT_ELEMENT_TYPE:
-            var type = object.type;
-            switch (type) {
-              case REACT_ASYNC_MODE_TYPE:
-              case REACT_CONCURRENT_MODE_TYPE:
-              case REACT_FRAGMENT_TYPE:
-              case REACT_PROFILER_TYPE:
-              case REACT_STRICT_MODE_TYPE:
-              case REACT_SUSPENSE_TYPE:
-                return type;
-              default:
-                var $$typeofType = type && type.$$typeof;
-                switch ($$typeofType) {
-                  case REACT_CONTEXT_TYPE:
-                  case REACT_FORWARD_REF_TYPE:
-                  case REACT_LAZY_TYPE:
-                  case REACT_MEMO_TYPE:
-                  case REACT_PROVIDER_TYPE:
-                    return $$typeofType;
-                  default:
-                    return $$typeof;
-                }
-            }
-          case REACT_PORTAL_TYPE:
-            return $$typeof;
-        }
-      }
-      return undefined;
-    }
-    // AsyncMode is deprecated along with isAsyncMode
-    var AsyncMode = REACT_ASYNC_MODE_TYPE;
-    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-    var ContextConsumer = REACT_CONTEXT_TYPE;
-    var ContextProvider = REACT_PROVIDER_TYPE;
-    var Element = REACT_ELEMENT_TYPE;
-    var ForwardRef = REACT_FORWARD_REF_TYPE;
-    var Fragment = REACT_FRAGMENT_TYPE;
-    var Lazy = REACT_LAZY_TYPE;
-    var Memo = REACT_MEMO_TYPE;
-    var Portal = REACT_PORTAL_TYPE;
-    var Profiler = REACT_PROFILER_TYPE;
-    var StrictMode = REACT_STRICT_MODE_TYPE;
-    var Suspense = REACT_SUSPENSE_TYPE;
-    var hasWarnedAboutDeprecatedIsAsyncMode = false;
-    // AsyncMode should be deprecated
-    function isAsyncMode(object) {
-      {
-        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-          hasWarnedAboutDeprecatedIsAsyncMode = true;
-          // Using console['warn'] to evade Babel and ESLint
-          console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-        }
-      }
-      return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-    }
-    function isConcurrentMode(object) {
-      return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-    }
-    function isContextConsumer(object) {
-      return typeOf(object) === REACT_CONTEXT_TYPE;
-    }
-    function isContextProvider(object) {
-      return typeOf(object) === REACT_PROVIDER_TYPE;
-    }
-    function isElement(object) {
-      return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-    }
-    function isForwardRef(object) {
-      return typeOf(object) === REACT_FORWARD_REF_TYPE;
-    }
-    function isFragment(object) {
-      return typeOf(object) === REACT_FRAGMENT_TYPE;
-    }
-    function isLazy(object) {
-      return typeOf(object) === REACT_LAZY_TYPE;
-    }
-    function isMemo(object) {
-      return typeOf(object) === REACT_MEMO_TYPE;
-    }
-    function isPortal(object) {
-      return typeOf(object) === REACT_PORTAL_TYPE;
-    }
-    function isProfiler(object) {
-      return typeOf(object) === REACT_PROFILER_TYPE;
-    }
-    function isStrictMode(object) {
-      return typeOf(object) === REACT_STRICT_MODE_TYPE;
-    }
-    function isSuspense(object) {
-      return typeOf(object) === REACT_SUSPENSE_TYPE;
-    }
-    exports.AsyncMode = AsyncMode;
-    exports.ConcurrentMode = ConcurrentMode;
-    exports.ContextConsumer = ContextConsumer;
-    exports.ContextProvider = ContextProvider;
-    exports.Element = Element;
-    exports.ForwardRef = ForwardRef;
-    exports.Fragment = Fragment;
-    exports.Lazy = Lazy;
-    exports.Memo = Memo;
-    exports.Portal = Portal;
-    exports.Profiler = Profiler;
-    exports.StrictMode = StrictMode;
-    exports.Suspense = Suspense;
-    exports.isAsyncMode = isAsyncMode;
-    exports.isConcurrentMode = isConcurrentMode;
-    exports.isContextConsumer = isContextConsumer;
-    exports.isContextProvider = isContextProvider;
-    exports.isElement = isElement;
-    exports.isForwardRef = isForwardRef;
-    exports.isFragment = isFragment;
-    exports.isLazy = isLazy;
-    exports.isMemo = isMemo;
-    exports.isPortal = isPortal;
-    exports.isProfiler = isProfiler;
-    exports.isStrictMode = isStrictMode;
-    exports.isSuspense = isSuspense;
-    exports.isValidElementType = isValidElementType;
-    exports.typeOf = typeOf;
-  })();
-}
 
 },{}],"3nUHV":[function(require,module,exports) {
 'use strict';
@@ -30663,384 +30523,173 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 
 module.exports = hoistNonReactStatics;
 
-},{"react-is":"RNMLE"}],"RNMLE":[function(require,module,exports) {
-"use strict";
-if ("development" === 'production') {
-  module.exports = require('./cjs/react-is.production.min.js');
-} else {
-  module.exports = require('./cjs/react-is.development.js');
-}
-
-},{"./cjs/react-is.development.js":"67nvd"}],"67nvd":[function(require,module,exports) {
-/** @license React v16.13.1
-* react-is.development.js
-*
-* Copyright (c) Facebook, Inc. and its affiliates.
-*
-* This source code is licensed under the MIT license found in the
-* LICENSE file in the root directory of this source tree.
-*/
-"use strict";
-if ("development" !== "production") {
-  (function () {
-    "use strict";
-    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-    // nor polyfill, then a plain number is used for performance.
-    var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
-    // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-    // (unstable) APIs that have been removed. Can we remove the symbols?
-    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
-    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
-    function isValidElementType(type) {
-      return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-      type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
-    }
-    function typeOf(object) {
-      if (typeof object === 'object' && object !== null) {
-        var $$typeof = object.$$typeof;
-        switch ($$typeof) {
-          case REACT_ELEMENT_TYPE:
-            var type = object.type;
-            switch (type) {
-              case REACT_ASYNC_MODE_TYPE:
-              case REACT_CONCURRENT_MODE_TYPE:
-              case REACT_FRAGMENT_TYPE:
-              case REACT_PROFILER_TYPE:
-              case REACT_STRICT_MODE_TYPE:
-              case REACT_SUSPENSE_TYPE:
-                return type;
-              default:
-                var $$typeofType = type && type.$$typeof;
-                switch ($$typeofType) {
-                  case REACT_CONTEXT_TYPE:
-                  case REACT_FORWARD_REF_TYPE:
-                  case REACT_LAZY_TYPE:
-                  case REACT_MEMO_TYPE:
-                  case REACT_PROVIDER_TYPE:
-                    return $$typeofType;
-                  default:
-                    return $$typeof;
-                }
-            }
-          case REACT_PORTAL_TYPE:
-            return $$typeof;
-        }
-      }
-      return undefined;
-    }
-    // AsyncMode is deprecated along with isAsyncMode
-    var AsyncMode = REACT_ASYNC_MODE_TYPE;
-    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-    var ContextConsumer = REACT_CONTEXT_TYPE;
-    var ContextProvider = REACT_PROVIDER_TYPE;
-    var Element = REACT_ELEMENT_TYPE;
-    var ForwardRef = REACT_FORWARD_REF_TYPE;
-    var Fragment = REACT_FRAGMENT_TYPE;
-    var Lazy = REACT_LAZY_TYPE;
-    var Memo = REACT_MEMO_TYPE;
-    var Portal = REACT_PORTAL_TYPE;
-    var Profiler = REACT_PROFILER_TYPE;
-    var StrictMode = REACT_STRICT_MODE_TYPE;
-    var Suspense = REACT_SUSPENSE_TYPE;
-    var hasWarnedAboutDeprecatedIsAsyncMode = false;
-    // AsyncMode should be deprecated
-    function isAsyncMode(object) {
-      {
-        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-          hasWarnedAboutDeprecatedIsAsyncMode = true;
-          // Using console['warn'] to evade Babel and ESLint
-          console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-        }
-      }
-      return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-    }
-    function isConcurrentMode(object) {
-      return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-    }
-    function isContextConsumer(object) {
-      return typeOf(object) === REACT_CONTEXT_TYPE;
-    }
-    function isContextProvider(object) {
-      return typeOf(object) === REACT_PROVIDER_TYPE;
-    }
-    function isElement(object) {
-      return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-    }
-    function isForwardRef(object) {
-      return typeOf(object) === REACT_FORWARD_REF_TYPE;
-    }
-    function isFragment(object) {
-      return typeOf(object) === REACT_FRAGMENT_TYPE;
-    }
-    function isLazy(object) {
-      return typeOf(object) === REACT_LAZY_TYPE;
-    }
-    function isMemo(object) {
-      return typeOf(object) === REACT_MEMO_TYPE;
-    }
-    function isPortal(object) {
-      return typeOf(object) === REACT_PORTAL_TYPE;
-    }
-    function isProfiler(object) {
-      return typeOf(object) === REACT_PROFILER_TYPE;
-    }
-    function isStrictMode(object) {
-      return typeOf(object) === REACT_STRICT_MODE_TYPE;
-    }
-    function isSuspense(object) {
-      return typeOf(object) === REACT_SUSPENSE_TYPE;
-    }
-    exports.AsyncMode = AsyncMode;
-    exports.ConcurrentMode = ConcurrentMode;
-    exports.ContextConsumer = ContextConsumer;
-    exports.ContextProvider = ContextProvider;
-    exports.Element = Element;
-    exports.ForwardRef = ForwardRef;
-    exports.Fragment = Fragment;
-    exports.Lazy = Lazy;
-    exports.Memo = Memo;
-    exports.Portal = Portal;
-    exports.Profiler = Profiler;
-    exports.StrictMode = StrictMode;
-    exports.Suspense = Suspense;
-    exports.isAsyncMode = isAsyncMode;
-    exports.isConcurrentMode = isConcurrentMode;
-    exports.isContextConsumer = isContextConsumer;
-    exports.isContextProvider = isContextProvider;
-    exports.isElement = isElement;
-    exports.isForwardRef = isForwardRef;
-    exports.isFragment = isFragment;
-    exports.isLazy = isLazy;
-    exports.isMemo = isMemo;
-    exports.isPortal = isPortal;
-    exports.isProfiler = isProfiler;
-    exports.isStrictMode = isStrictMode;
-    exports.isSuspense = isSuspense;
-    exports.isValidElementType = isValidElementType;
-    exports.typeOf = typeOf;
-  })();
-}
-
-},{}],"1XRSj":[function(require,module,exports) {
+},{"react-is":"68QIU"}],"1XRSj":[function(require,module,exports) {
 "use strict";
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-  var _react = _interopRequireDefault(require("react"));
-  var _Menu = require("../../Navigation/Menu");
-  require("./CustomHeader.css");
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  /**
-  *  CustomHeader.
-  *
-  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-  */
-  var _default = function _default() {
-    return (
-      /*#__PURE__*/_react["default"].createElement("header", null, /*#__PURE__*/_react["default"].createElement("h2", null, "React 2020"), /*#__PURE__*/_react["default"].createElement(_Menu.Menu, null))
-    );
-  };
-  exports["default"] = _default;
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _NavigationMenu = require('../../Navigation/Menu');
+  require('./CustomHeader.css');
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/Components/Presentation/CustomHeader/index.jsx";
+  exports.default = () => /*#__PURE__*/_reactDefault.default.createElement("header", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement("h2", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }
+  }, "React 2021"), /*#__PURE__*/_reactDefault.default.createElement(_NavigationMenu.Menu, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 9
+    }
+  }));
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","../../Navigation/Menu":"3ciUU","./CustomHeader.css":"3yOvX","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3ciUU":[function(require,module,exports) {
+},{"react":"3b2NM","../../Navigation/Menu":"3ciUU","./CustomHeader.css":"3yOvX","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"3ciUU":[function(require,module,exports) {
 "use strict";
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  function _typeof(obj) {
-    "@babel/helpers - typeof";
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      _typeof = function _typeof(obj) {
-        return typeof obj;
-      };
-    } else {
-      _typeof = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-    return _typeof(obj);
-  }
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.Menu = void 0;
-  var _react = _interopRequireDefault(require("react"));
-  var _reactRouterDom = require("react-router-dom");
-  var _Constants = require("../../../Constants");
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-  function _defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if (("value" in descriptor)) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-  function _createClass(Constructor, protoProps, staticProps) {
-    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) _defineProperties(Constructor, staticProps);
-    return Constructor;
-  }
-  function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-      throw new TypeError("Super expression must either be null or a function");
-    }
-    subClass.prototype = Object.create(superClass && superClass.prototype, {
-      constructor: {
-        value: subClass,
-        writable: true,
-        configurable: true
-      }
-    });
-    if (superClass) _setPrototypeOf(subClass, superClass);
-  }
-  function _setPrototypeOf(o, p) {
-    _setPrototypeOf = Object.setPrototypeOf || (function _setPrototypeOf(o, p) {
-      o.__proto__ = p;
-      return o;
-    });
-    return _setPrototypeOf(o, p);
-  }
-  function _createSuper(Derived) {
-    var hasNativeReflectConstruct = _isNativeReflectConstruct();
-    return function _createSuperInternal() {
-      var Super = _getPrototypeOf(Derived), result;
-      if (hasNativeReflectConstruct) {
-        var NewTarget = _getPrototypeOf(this).constructor;
-        result = Reflect.construct(Super, arguments, NewTarget);
-      } else {
-        result = Super.apply(this, arguments);
-      }
-      return _possibleConstructorReturn(this, result);
-    };
-  }
-  function _possibleConstructorReturn(self, call) {
-    if (call && (_typeof(call) === "object" || typeof call === "function")) {
-      return call;
-    }
-    return _assertThisInitialized(self);
-  }
-  function _assertThisInitialized(self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-    return self;
-  }
-  function _isNativeReflectConstruct() {
-    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-    if (Reflect.construct.sham) return false;
-    if (typeof Proxy === "function") return true;
-    try {
-      Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
-      return true;
-    } catch (e) {
-      return false;
-    }
-  }
-  function _getPrototypeOf(o) {
-    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-      return o.__proto__ || Object.getPrototypeOf(o);
-    };
-    return _getPrototypeOf(o);
-  }
-  var w = window.location.pathname;
-  var Menu = /*#__PURE__*/(function (_React$Component) {
-    _inherits(Menu, _React$Component);
-    var _super = _createSuper(Menu);
-    function Menu(props) {
-      var _this;
-      _classCallCheck(this, Menu);
-      _this = _super.call(this, props);
-      _this.home = /*#__PURE__*/_react["default"].createRef();
-      return _this;
-    }
-    _createClass(Menu, [{
-      key: "render",
-      value: function render() {
-        var _this2 = this;
-        return (
-          /*#__PURE__*/_react["default"].createElement("nav", null, /*#__PURE__*/_react["default"].createElement("ul", null, /*#__PURE__*/_react["default"].createElement("li", {
-            className: "home"
-          }, /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Link, {
-            onClick: function onClick() {
-              w = _Constants.BASE_PATH;
-              _this2.home.current.className = 'active';
-            },
-            ref: this.home,
-            className: w === _Constants.BASE_PATH || w === _Constants.HOME_PATH ? 'active' : 'inactive',
-            to: _Constants.BASE_PATH
-          }, "Home"))))
-        );
-      }
-    }]);
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  _parcelHelpers.export(exports, "Menu", function () {
     return Menu;
-  })(_react["default"].Component);
-  exports.Menu = Menu;
+  });
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactRouterDom = require('react-router-dom');
+  var _Constants = require('../../../Constants');
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/Components/Navigation/Menu/index.jsx";
+  let w = window.location.pathname;
+  class Menu extends _reactDefault.default.Component {
+    constructor(props) {
+      super(props);
+      this.home = /*#__PURE__*/_reactDefault.default.createRef();
+    }
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("nav", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("ul", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("li", {
+          className: "home",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+          onClick: () => {
+            w = _Constants.BASE_PATH;
+            this.home.current.className = 'active';
+          },
+          ref: this.home,
+          className: w === _Constants.BASE_PATH || w === _Constants.HOME_PATH ? 'active' : 'inactive',
+          to: _Constants.BASE_PATH,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 26,
+            columnNumber: 25
+          }
+        }, "Home"))))
+      );
+    }
+  }
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","../../../Constants":"7tDIe","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7tDIe":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","../../../Constants":"7tDIe","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"7tDIe":[function(require,module,exports) {
 "use strict";
-Object.defineProperty(exports, "__esModule", {
-  value: true
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "BASE_PATH", function () {
+  return BASE_PATH;
 });
-exports.HOME_PATH = exports.BASE_PATH = void 0;
-/**
-*  Constants - client-side constants. Publicly exposed!
-*
-*  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-*/
-// React Client Routes
-var BASE_PATH = '/', HOME_PATH = '/home';
-exports.HOME_PATH = HOME_PATH;
-exports.BASE_PATH = BASE_PATH;
+_parcelHelpers.export(exports, "HOME_PATH", function () {
+  return HOME_PATH;
+});
+const BASE_PATH = '/', HOME_PATH = '/home';
 
+},{"@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"5gA8y":[function(require,module,exports) {
+"use strict";
+
+exports.interopDefault = function (a) {
+  return a && a.__esModule ? a : {
+    default: a
+  };
+};
+
+exports.defineInteropFlag = function (a) {
+  Object.defineProperty(a, '__esModule', {
+    value: true
+  });
+};
+
+exports.exportAll = function (source, dest) {
+  Object.keys(source).forEach(function (key) {
+    if (key === 'default' || key === '__esModule') {
+      return;
+    } // Skip duplicate re-exports when they have the same value.
+
+
+    if (key in dest && dest[key] === source[key]) {
+      return;
+    }
+
+    Object.defineProperty(dest, key, {
+      enumerable: true,
+      get: function () {
+        return source[key];
+      }
+    });
+  });
+  return dest;
+};
+
+exports.export = function (dest, destName, get) {
+  Object.defineProperty(dest, destName, {
+    enumerable: true,
+    get: get
+  });
+};
 },{}],"4Jj4f":[function(require,module,exports) {
 "use strict";
 var Refresh = require('react-refresh/runtime');
@@ -31205,87 +30854,94 @@ var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-  var _react = _interopRequireDefault(require("react"));
-  var _UnsplashSection = _interopRequireDefault(require("../UnsplashSection"));
-  require("./LandingPage.css");
-  var _YouTubeComponent = _interopRequireDefault(require("../YouTubeComponent"));
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  /**
-  *  Grid-only LandingPage page.
-  *
-  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-  */
-  var _default = function _default() {
-    return (
-      /*#__PURE__*/_react["default"].createElement("main", {
-        className: "landingPage"
-      }, /*#__PURE__*/_react["default"].createElement(_UnsplashSection["default"], {
-        photo: '1591858219137-84737f6e8a67',
-        ixid: 'eyJhcHBfaWQiOjEyMDd9'
-      }), /*#__PURE__*/_react["default"].createElement("div", {
-        className: "content"
-      }, /*#__PURE__*/_react["default"].createElement("div", {
-        className: "text"
-      }, "Lorem Ipsum")), /*#__PURE__*/_react["default"].createElement(_YouTubeComponent["default"], {
-        className: "more",
-        url: "https://www.youtube.com/embed/oHHSSJDJ4oo"
-      }))
-    );
-  };
-  exports["default"] = _default;
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _UnsplashSection = require('../UnsplashSection');
+  var _UnsplashSectionDefault = _parcelHelpers.interopDefault(_UnsplashSection);
+  require('./LandingPage.css');
+  var _YouTubeComponent = require("../YouTubeComponent");
+  var _YouTubeComponentDefault = _parcelHelpers.interopDefault(_YouTubeComponent);
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/Components/Presentation/LandingPage/index.jsx";
+  exports.default = () => /*#__PURE__*/_reactDefault.default.createElement("main", {
+    className: "landingPage",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement(_UnsplashSectionDefault.default, {
+    photo: '1591858219137-84737f6e8a67',
+    ixid: 'eyJhcHBfaWQiOjEyMDd9',
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+    className: "content",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+    className: "text",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 13
+    }
+  }, "Lorem Ipsum")), /*#__PURE__*/_reactDefault.default.createElement(_YouTubeComponentDefault.default, {
+    className: "more",
+    url: "https://www.youtube.com/embed/oHHSSJDJ4oo",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }
+  }));
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","../UnsplashSection":"3xEwR","./LandingPage.css":"5Xjiq","../YouTubeComponent":"3qIMJ","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3xEwR":[function(require,module,exports) {
+},{"react":"3b2NM","../UnsplashSection":"3xEwR","./LandingPage.css":"5Xjiq","../YouTubeComponent":"3qIMJ","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"3xEwR":[function(require,module,exports) {
 "use strict";
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-  var _react = _interopRequireDefault(require("react"));
-  require("./UnsplashSection.css");
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  /**
-  *  Unsplash section
-  *
-  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-  */
-  var STYLE = function STYLE(photo, ixid) {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require('./UnsplashSection.css');
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/Components/Presentation/UnsplashSection/index.jsx";
+  const STYLE = (photo, ixid) => {
     return {
-      'backgroundImage': ("url('https://images.unsplash.com/photo-").concat(photo, "?ixlib=rb-1.2.1&ixid=").concat(ixid, "&auto=format&fit=crop&w=1000&q=80')")
+      'backgroundImage': `url('https://images.unsplash.com/photo-${photo}?ixlib=rb-1.2.1&ixid=${ixid}&auto=format&fit=crop&w=1000&q=80')`
     };
   };
   _c = STYLE;
-  var _default = function _default(_ref) {
-    var photo = _ref.photo, ixid = _ref.ixid;
-    return (
-      /*#__PURE__*/_react["default"].createElement("div", {
-        className: "unsplash",
-        style: STYLE(photo, ixid)
-      })
-    );
-  };
-  exports["default"] = _default;
+  exports.default = ({photo, ixid}) => /*#__PURE__*/_reactDefault.default.createElement("div", {
+    className: "unsplash",
+    style: STYLE(photo, ixid),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 5
+    }
+  });
   var _c;
   $RefreshReg$(_c, "STYLE");
   helpers.postlude(module);
@@ -31294,181 +30950,210 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","./UnsplashSection.css":"cxo0C","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"cxo0C":[function() {},{}],"5Xjiq":[function() {},{}],"3qIMJ":[function(require,module,exports) {
+},{"react":"3b2NM","./UnsplashSection.css":"cxo0C","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"cxo0C":[function() {},{}],"5Xjiq":[function() {},{}],"3qIMJ":[function(require,module,exports) {
 "use strict";
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-  var _react = _interopRequireDefault(require("react"));
-  require("./YouTubeComponent.css");
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  /**
-  *  Video Component.
-  *
-  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-  */
-  var _default = function _default(_ref) {
-    var className = _ref.className, url = _ref.url;
-    return (
-      /*#__PURE__*/_react["default"].createElement("div", {
-        className: ("").concat(className, " youtube")
-      }, /*#__PURE__*/_react["default"].createElement("iframe", {
-        width: "100%",
-        height: "100%",
-        src: url,
-        frameBorder: "0",
-        allow: "autoplay; encrypted-media",
-        allowFullScreen: true
-      }))
-    );
-  };
-  exports["default"] = _default;
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require('./YouTubeComponent.css');
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/Components/Presentation/YouTubeComponent/index.jsx";
+  exports.default = ({className, url}) => /*#__PURE__*/_reactDefault.default.createElement("div", {
+    className: `${className} youtube`,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement("iframe", {
+    width: "100%",
+    height: "100%",
+    src: url,
+    frameBorder: "0",
+    allow: "autoplay; encrypted-media",
+    allowFullScreen: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 9
+    }
+  }));
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","./YouTubeComponent.css":"37sk7","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"37sk7":[function() {},{}],"44mAy":[function(require,module,exports) {
+},{"react":"3b2NM","./YouTubeComponent.css":"37sk7","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"37sk7":[function() {},{}],"44mAy":[function(require,module,exports) {
 "use strict";
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-  var _react = _interopRequireDefault(require("react"));
-  require("./PageNotFoundPage.css");
-  var _YouTubeComponent = _interopRequireDefault(require("../YouTubeComponent"));
-  var _UnsplashSection = _interopRequireDefault(require("../UnsplashSection"));
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  /**
-  *  Page Not Found LandingPage page.
-  *
-  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-  */
-  var _default = function _default() {
-    return (
-      /*#__PURE__*/_react["default"].createElement("main", {
-        className: "notFoundPage"
-      }, /*#__PURE__*/_react["default"].createElement(_UnsplashSection["default"], {
-        photo: '1591858219137-84737f6e8a67',
-        ixid: 'eyJhcHBfaWQiOjEyMDd9'
-      }), /*#__PURE__*/_react["default"].createElement("div", {
-        className: "content"
-      }, /*#__PURE__*/_react["default"].createElement("div", {
-        className: "text"
-      }, "404. Whoops! You landed on the wrong page (But hey... check out the sweet video below)!")), /*#__PURE__*/_react["default"].createElement(_YouTubeComponent["default"], {
-        className: "more",
-        url: "https://www.youtube.com/embed/oHHSSJDJ4oo"
-      }))
-    );
-  };
-  exports["default"] = _default;
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require('./PageNotFoundPage.css');
+  var _YouTubeComponent = require('../YouTubeComponent');
+  var _YouTubeComponentDefault = _parcelHelpers.interopDefault(_YouTubeComponent);
+  var _UnsplashSection = require("../UnsplashSection");
+  var _UnsplashSectionDefault = _parcelHelpers.interopDefault(_UnsplashSection);
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/Components/Presentation/PageNotFoundPage/index.jsx";
+  exports.default = () => /*#__PURE__*/_reactDefault.default.createElement("main", {
+    className: "notFoundPage",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement(_UnsplashSectionDefault.default, {
+    photo: '1591858219137-84737f6e8a67',
+    ixid: 'eyJhcHBfaWQiOjEyMDd9',
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+    className: "content",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+    className: "text",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 13
+    }
+  }, "404. Whoops! You landed on the wrong page (But hey... check out the sweet video below)!")), /*#__PURE__*/_reactDefault.default.createElement(_YouTubeComponentDefault.default, {
+    className: "more",
+    url: "https://www.youtube.com/embed/oHHSSJDJ4oo",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }
+  }));
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","./PageNotFoundPage.css":"4kmRq","../YouTubeComponent":"3qIMJ","../UnsplashSection":"3xEwR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4kmRq":[function() {},{}],"7i3QH":[function(require,module,exports) {
+},{"react":"3b2NM","./PageNotFoundPage.css":"4kmRq","../YouTubeComponent":"3qIMJ","../UnsplashSection":"3xEwR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"4kmRq":[function() {},{}],"7i3QH":[function(require,module,exports) {
 "use strict";
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-  var _react = _interopRequireDefault(require("react"));
-  var _CustomLink = _interopRequireDefault(require("../CustomLink"));
-  require("./CustomFooter.css");
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  /**
-  *  CustomFooter.
-  *
-  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-  */
-  var _default = function _default() {
-    return (
-      /*#__PURE__*/_react["default"].createElement("footer", null, /*#__PURE__*/_react["default"].createElement("ul", null, /*#__PURE__*/_react["default"].createElement("li", null, /*#__PURE__*/_react["default"].createElement(_CustomLink["default"], {
-        url: 'https://www.linkedin.com/in/adamintaegerard/',
-        label: 'LinkedIn'
-      })), /*#__PURE__*/_react["default"].createElement("li", null, /*#__PURE__*/_react["default"].createElement(_CustomLink["default"], {
-        url: 'https://thoughtscript.io/landing.html',
-        label: 'Thoughtscript.io'
-      }))))
-    );
-  };
-  exports["default"] = _default;
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _CustomLink = require('../CustomLink');
+  var _CustomLinkDefault = _parcelHelpers.interopDefault(_CustomLink);
+  require('./CustomFooter.css');
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/Components/Presentation/CustomFooter/index.jsx";
+  exports.default = () => /*#__PURE__*/_reactDefault.default.createElement("footer", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement("ul", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement(_CustomLinkDefault.default, {
+    url: 'https://www.linkedin.com/in/adamintaegerard/',
+    label: 'LinkedIn',
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 17
+    }
+  })), /*#__PURE__*/_reactDefault.default.createElement("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement(_CustomLinkDefault.default, {
+    url: 'https://thoughtscript.io/landing.html',
+    label: 'Thoughtscript.io',
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 17
+    }
+  }))));
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","../CustomLink":"4UpTU","./CustomFooter.css":"Kf33M","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4UpTU":[function(require,module,exports) {
+},{"react":"3b2NM","../CustomLink":"4UpTU","./CustomFooter.css":"Kf33M","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"4UpTU":[function(require,module,exports) {
 "use strict";
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-  var _react = _interopRequireDefault(require("react"));
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-  /**
-  *  Custom anchor boilerplate with rel security.
-  *
-  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
-  */
-  var _default = function _default(_ref) {
-    var url = _ref.url, label = _ref.label;
-    return (
-      /*#__PURE__*/_react["default"].createElement("a", {
-        href: url,
-        rel: "nofollow noopener noreferrer",
-        target: "_blank"
-      }, label)
-    );
-  };
-  exports["default"] = _default;
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "/Users/adamgerard/Desktop/_newWorkspace/_code/react_2021/reactAppSrc/Components/Presentation/CustomLink/index.jsx";
+  exports.default = ({url, label}) => /*#__PURE__*/_reactDefault.default.createElement("a", {
+    href: url,
+    rel: "nofollow noopener noreferrer",
+    target: "_blank",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 34
+    }
+  }, label);
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"Kf33M":[function() {},{}],"2gCGu":[function() {},{}],"CH9tE":[function() {},{}]},["1j6wU","5raaw","2e6LA"], "2e6LA", "parcelRequire8f7b")
+},{"react":"3b2NM","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"Kf33M":[function() {},{}],"2gCGu":[function() {},{}],"CH9tE":[function() {},{}]},["1j6wU","5raaw","2e6LA"], "2e6LA", "parcelRequire8f7b")
 
 //# sourceMappingURL=index.15daa41a.js.map
