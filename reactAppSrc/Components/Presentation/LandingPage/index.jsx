@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- *  Grid-only LandingPage page.
+ *  LandingPage page.
  *
  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
  */
