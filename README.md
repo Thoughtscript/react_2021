@@ -1,6 +1,6 @@
 # react_2021
 
-[![](https://img.shields.io/badge/React-17.0.1-orange.svg)](https://reactjs.org) [![](https://img.shields.io/badge/parcel-1.12.4-royalblue.svg)](https://parceljs.org/) [![](https://img.shields.io/badge/Node.js-15.9.0-yellowgreen.svg)](https://nodejs.org/en/) [![](https://img.shields.io/badge/LICENSE-MIT-green.svg)](./LICENSE)
+[![](https://img.shields.io/badge/React-17.0.1-orange.svg)](https://reactjs.org) [![](https://img.shields.io/badge/parcel-2.0.0-royalblue.svg)](https://parceljs.org/) [![](https://img.shields.io/badge/Node.js-15.9.0-yellowgreen.svg)](https://nodejs.org/en/) [![](https://img.shields.io/badge/LICENSE-MIT-green.svg)](./LICENSE)
 
 This repo demonstrates how to use ReactJS to build a fancy new frontend. It uses some of the newer React concepts like [*hooks*](https://reactjs.org/docs/hooks-intro.html), uses parcel 2.0.0 for [*basic minification*](https://webpack.js.org/plugins/uglifyjs-webpack-plugin/) and [*style processing*](https://webpack.js.org/plugins/mini-css-extract-plugin/), and the absence of Redux.
 
