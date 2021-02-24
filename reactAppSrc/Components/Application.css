@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html,
+body, #react_app_root {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    /* Use exact height and match footer top */
+    height: 2400px;
+    width: 100%;
+}
+
+footer {
+    /* Use exact px and match main height */
+    top: 2400px;
+}

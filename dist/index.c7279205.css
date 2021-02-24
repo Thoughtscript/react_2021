@@ -1,0 +1,378 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+header {
+    z-index:999;
+    top: 0;
+    position: fixed;
+    height: 12%;
+    width: 100%;
+    opacity:.9;
+    border-bottom: 1px solid black;
+    box-shadow: 2px 5px 9px 5px black;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header > h2 {
+    position: relative;
+    left:50px;
+    font-weight:900;
+    font-size:30px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+/** Nav */
+nav {
+    position: absolute;
+    left: 250px;
+    top: 20px;
+    width: 80%;
+}
+nav > ul > li {
+    font-weight: 500;
+    padding-right: 100px;
+    list-style: none;
+    display: inline-block;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+nav > ul > li > a:hover {
+    color: turquoise;
+    opacity: .8;
+}
+.active {
+    text-decoration: underline;
+}
+.innerRouterWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top:0;
+    left:0;
+}
+.unsplash {
+    width: 100%;
+    height: 800px;
+    z-index:-999;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+main.landingPage {
+
+}
+main.landingPage > .content {
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    opacity:.8;
+    border-top: 2px dashed black;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+main.landingPage > .content > .text {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    top: 400px;
+    position: relative;
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 900;
+}
+.youtube > iframe {
+    width: 100%;
+    height: 800px;
+    z-index: -999;
+}
+main.notFoundPage {
+
+}
+main.notFoundPage > .content {
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    opacity:.8;
+    border-top: 2px dashed black;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+main.notFoundPage > .content > .text {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    top: 400px;
+    position: relative;
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 900;
+    width: 50%;
+    left: 25%;
+}
+footer {
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: .9;
+    border-top: 1px solid black;
+    box-shadow: 2px 5px 5px 9px black;
+}
+footer > ul {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+footer > ul > li {
+    list-style: none;
+    display: inline-block;
+}
+footer > ul > li > a {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+footer > ul > li > a:hover {
+    opacity: .8;
+    text-decoration: underline;
+}
+html,
+body, #react_app_root {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+main {
+    position: absolute;
+    top: 0;
+    /* Use exact height and match footer top */
+    height: 2400px;
+    width: 100%;
+}
+footer {
+    /* Use exact px and match main height */
+    top: 2400px;
+}
+/** Mobile */
+@media only screen and (max-width: 1845px) {
+
+}
+
+header {
+    z-index:999;
+    top: 0;
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    opacity:.9;
+    border-bottom: 1px solid black;
+    box-shadow: 2px 5px 9px 5px black;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header > h2 {
+    position: relative;
+    left:50px;
+    font-weight:900;
+    font-size:30px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+/** Nav */
+nav {
+    position: absolute;
+    left: 250px;
+    top: 20px;
+    width: 80%;
+}
+nav > ul > li {
+    font-weight: 500;
+    padding-right: 100px;
+    list-style: none;
+    display: inline-block;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+nav > ul > li > a:hover {
+    color: turquoise;
+    opacity: .8;
+}
+.active {
+    text-decoration: underline;
+}
+.innerRouterWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top:0;
+    left:0;
+}
+.unsplash {
+    width: 100%;
+    height: 800px;
+    z-index:-999;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+main.landingPage {
+
+}
+
+main.landingPage > .content {
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    opacity:.8;
+    border-top: 2px dashed black;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main.landingPage > .content > .text {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    top: 400px;
+    position: relative;
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 900;
+}
+.youtube > iframe {
+    width: 100%;
+    height: 800px;
+    z-index: -999;
+}
+main.notFoundPage {
+
+}
+
+main.notFoundPage > .content {
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    opacity:.8;
+    border-top: 2px dashed black;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main.notFoundPage > .content > .text {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    top: 400px;
+    position: relative;
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 900;
+    width: 50%;
+    left: 25%;
+}
+footer {
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: .9;
+    border-top: 1px solid black;
+    box-shadow: 2px 5px 5px 9px black;
+}
+
+footer > ul {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+footer > ul > li {
+    list-style: none;
+    display: inline-block;
+}
+
+footer > ul > li > a {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+footer > ul > li > a:hover {
+    opacity: .8;
+    text-decoration: underline;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html,
+body, #react_app_root {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    /* Use exact height and match footer top */
+    height: 2400px;
+    width: 100%;
+}
+
+footer {
+    /* Use exact px and match main height */
+    top: 2400px;
+}
+/** Mobile */
+
+@media only screen and (max-width: 1845px) {
+
+}
+/*# sourceMappingURL=index.c7279205.css.map */

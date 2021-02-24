@@ -1,0 +1,35 @@
+footer {
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: .9;
+    border-top: 1px solid black;
+    box-shadow: 2px 5px 5px 9px black;
+}
+
+footer > ul {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+footer > ul > li {
+    list-style: none;
+    display: inline-block;
+}
+
+footer > ul > li > a {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+footer > ul > li > a:hover {
+    opacity: .8;
+    text-decoration: underline;
+}

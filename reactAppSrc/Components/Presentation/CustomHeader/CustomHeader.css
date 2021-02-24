@@ -1,0 +1,48 @@
+header {
+    z-index:999;
+    top: 0;
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    opacity:.9;
+    border-bottom: 1px solid black;
+    box-shadow: 2px 5px 9px 5px black;
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header > h2 {
+    position: relative;
+    left:50px;
+    font-weight:900;
+    font-size:30px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+/** Nav */
+nav {
+    position: absolute;
+    left: 250px;
+    top: 20px;
+    width: 80%;
+}
+nav > ul > li {
+    font-weight: 500;
+    padding-right: 100px;
+    list-style: none;
+    display: inline-block;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+nav > ul > li > a:hover {
+    color: turquoise;
+    opacity: .8;
+}
+.active {
+    text-decoration: underline;
+}
